@@ -1,0 +1,29 @@
+<h1>BUILT IN PIPES</h1>
+<h1>PARAMETERIZING PIPES</h1> [show with  colon(:) ]
+<h2>{{Name | uppercase}}</h2>
+<h2>{{Name | lowercase}}</h2>
+<h2>{{Message | titlecase}}</h2>
+<h2>{{3456 | number:'1.2-3' }}</h2>
+<h2>{{3456 | number:'8.4-6'}}</h2>
+<h2>{{0.50 | percent:'2.1-3'}}</h2>
+<h2>{{Name | slice:4:9}}</h2>
+<h2>{{500 | currency}}</h2>
+<h2>{{200 | currency:'INR'}}</h2>
+<h2>{{100 | currency:'EUR':'code'}}</h2>
+<h2>{{date | date}}</h2>
+<h2>{{date | date:'long'}}</h2>
+<h2>{{date | date:'medium'}}</h2>
+<h2>{{persons | json}}</h2>
+
+<h1>CUSTOM PIPES</h1>
+<!-- <h2>{{50 | highlight:40}}</h2> -->
+<h2>{{persons.city }}</h2>
+<h2>{{persons.city | highlight: persons.city}}</h2>
+
+<h1>CHAINING PIPES</h1>
+<h2>{{date | date |uppercase}}</h2>
+<h2>{{date | date | lowercase}}</h2>
+<h2>{{date | date | titlecase}}</h2>
+<h2>{{currency | currency:'usd' | uppercase }}</h2>
+<h2>{{date | date | slice:2:5 }}</h2>
+<h2>{{date | date | slice:2:8}}</h2>
